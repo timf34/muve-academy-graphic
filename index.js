@@ -4,6 +4,7 @@
 const CONFIG = {
     lineThickness: 0.1,      // % of image width
     circleThickness: 0.1,    // % of image width
+    quoteMargin: 20,         // px from centre line
 };
 
 // ============================================
@@ -71,6 +72,13 @@ function draw() {
         ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
         ctx.stroke();
     });
+
+    // Position the quote in lower right quadrant
+    const quote = document.getElementById('quote');
+    const fontSize = h * 0.03; // Font size relative to image size
+    quote.style.fontSize = fontSize + 'px';
+    quote.style.left = (centerX + CONFIG.quoteMargin) + 'px';
+    quote.style.top = (h * 0.65) + 'px'; // 65% down the image
 }
 
 // Draw when image loads

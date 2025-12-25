@@ -12,14 +12,32 @@
             justify-content: center;
         }
         
-        img {
+        #container {
             width: 90%;
+            position: relative;
+        }
+        
+        #baseImage {
+            width: 100%;
             height: auto;
+            display: block;
+        }
+        
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <img src="black_image.jpg" alt="Image">
+    <div id="container">
+        <img id="baseImage" src="black_image.jpg" alt="Image">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
-

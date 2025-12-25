@@ -78,7 +78,7 @@ function draw() {
     const fontSize = h * 0.03; // Font size relative to image size
     quote.style.fontSize = fontSize + 'px';
     quote.style.left = (centerX + CONFIG.quoteMargin) + 'px';
-    quote.style.top = (h * 0.65) + 'px'; // 65% down the image
+    quote.style.top = (h * 0.55) + 'px'; // 65% down the image
 }
 
 // Draw when image loads

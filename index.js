@@ -6,14 +6,16 @@ const CONFIG = {
     circleThickness: 0.1,    // % of image width
     
     lines: [
-        { x1: 20, y1: 0, x2: 30, y2: 100 },   // diagonal from top-left area
-        { x1: 50, y1: 0, x2: 55, y2: 100 },   // center diagonal
-        { x1: 75, y1: 0, x2: 80, y2: 100 },   // right diagonal
+        { x1: 12, y1: 0, x2: 12, y2: 100 },  
+        { x1: 88, y1: 0, x2: 88, y2: 100 },   
+        { x1: 50, y1: 0, x2: 50, y2: 100 },   
+        { x1: 12, y1: 0, x2: 88, y2: 100 },   
+        { x1: 88, y1: 0, x2: 12, y2: 100 },   
     ],
     
     circles: [
-        { x: 35, y: 40, radius: 5 },
-        { x: 65, y: 60, radius: 8 },
+        { x: 50, y: 50, radius: 38 },
+        // { x: 65, y: 60, radius: 8 },
     ]
 };
 

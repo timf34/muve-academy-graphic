@@ -1,7 +1,6 @@
 // ============================================
 // CONFIG - Edit your graphics here
 // ============================================
-
 const CONFIG = {
     lineThickness: 0.1,      // % of image width
     circleThickness: 0.1,    // % of image width
@@ -21,19 +20,26 @@ const CONFIG = {
 // ============================================
 // DRAWING CODE - No need to edit below
 // ============================================
-
 const img = document.getElementById('baseImage');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 function draw() {
-    // Set canvas size to match image
-    canvas.width = img.offsetWidth;
-    canvas.height = img.offsetHeight;
-
-    const w = canvas.width;
-    const h = canvas.height;
-
+    const w = img.offsetWidth;
+    const h = img.offsetHeight;
+    
+    // Account for device pixel ratio (Retina displays)
+    const dpr = window.devicePixelRatio || 1;
+    
+    // Set canvas size accounting for high-DPI displays
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    
+    // Scale context to match device pixel ratio
+    ctx.scale(dpr, dpr);
+    
     ctx.strokeStyle = 'white';
     ctx.lineCap = 'round';
 

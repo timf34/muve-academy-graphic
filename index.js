@@ -50,6 +50,9 @@ function draw() {
     
     const circles = [
         { x: centerX, y: h / 2, radius: circleRadius },   // Inscribed circle
+        { x: leftX, y: 4 * h / 5, radius: h / 5  }, // Medium sized left circle
+        { x: 13 * w / 32, y: 11 * h / 12, radius: h / 12  }, // Inner circle
+
     ];
     
     // Draw lines

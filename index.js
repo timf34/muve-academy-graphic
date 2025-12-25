@@ -2,8 +2,8 @@
 // CONFIG - Edit your graphics here
 // ============================================
 const CONFIG = {
-    lineThickness: 0.1,      // % of image width
-    circleThickness: 0.1,    // % of image width
+    lineThickness: 0.12,      // % of image width
+    circleThickness: 0.12,    // % of image width
     quoteMargin: 20,         // px from centre line
 };
 
@@ -75,10 +75,10 @@ function draw() {
 
     // Position the quote in lower right quadrant
     const quote = document.getElementById('quote');
-    const fontSize = h * 0.03; // Font size relative to image size
+    const fontSize = h * 0.035; // Font size relative to image size
     quote.style.fontSize = fontSize + 'px';
     quote.style.left = (centerX + CONFIG.quoteMargin) + 'px';
-    quote.style.top = (h * 0.55) + 'px'; // 65% down the image
+    quote.style.top = (h * 0.90) + 'px'; // 65% down the image
 }
 
 // Draw when image loads

@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Display</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                background-color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-            }
-            
-            #container {
-                width: 100%;
-                max-width: 4000px;
-                position: relative;
-            }
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
         
-            #baseImage {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-            
-            #canvas {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
+        #container {
+            width: 100%;
+            max-width: 4000px;
+            margin: 0 auto;
+            position: relative;
+        }
+    
+        #baseImage {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-            #quote {
-                position: absolute;
-                color: white;
-                font-family: Georgia, serif;
-                font-style: italic;
-                font-weight: 600;
-                line-height: 1.6;
-                white-space: pre-line;
-                pointer-events: none;
-                letter-spacing: 0.05em;
-            }
-        </style>
+        #quote {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.6;
+            white-space: pre-line;
+            pointer-events: none;
+            letter-spacing: 0.05em;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
